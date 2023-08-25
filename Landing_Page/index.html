@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="temperature.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Handjet:wght@300;400&family=Noto+Sans&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Handjet:wght@300;400&family=Noto+Sans:wght@300;400&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="gauge.css">
+    <title>Temperature Converter </title>
+</head>
+<html>
+
+<body>
+    <header>
+        <nav>
+            <span class="gradient-text">C2F</span>
+
+            <ul>
+                <a href="index.html">
+                    <li>Home
+                </a>
+                <a href="#temperature">
+                    <li>Temperature
+                </a>
+
+                <a href="#abt">
+                    <li>About us
+                </a>
+                <a href="#Support">
+                    <li>Support
+                </a>
+                <a href="#Contact Us">
+                    <li>Contact Us
+                </a>
+
+            </ul>
+        </nav>
+    </header><br>
+    <div id="sign">
+        <input type="text" placeholder="username" id="suorsi">&nbsp;<button>Sign-In</button>
+        &nbsp;
+        <button>Sign-Up</button>&nbsp;
+    </div><br>
+    <div id="display">
+        <center>
+            <font id="c2f">CELSIUS TO FAHRENHEIT</font>
+        </center>
+    </div><br>
+    <div id="landpage">
+        <div id="con">
+            <div class="gauge__main">
+                <div class="gauge">
+                    <div class="ticks">
+                    </div>
+                    <div class="needle" id="needle"></div>
+                </div>
+            </div>
+            <div class="conversion">
+                <!-- conversion -->
+
+                <div id="conversion1">
+                    <div id="inbox">
+                        <input type="number" id="celsiusInput" placeholder="Enter Celsius">
+                    </div>
+
+                    <div id="ctcbox">
+                        <button onclick="convertToCelsius()">Convert</button>
+                    </div>
+
+                </div>
+
+                <!-- div result -->
+
+                <div id="result">
+                    <p id="result">
+                        <font color="white" size="6px" style="font-family: 'Noto Sans', sans-serif;">Fahrenheit:
+                        </font>
+                        <span id="fahrenheitValue">000.000</span>
+                        <font color="white" size="6px" style="font-family: 'Noto Sans', sans-serif;"
+                            font-family="NotoSans">
+                            °F</font>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- formula div -->
+
+        <div id="formula">
+            <p class="formula">
+                <center>
+                    <font color="white" style="font-family:'Noto Sans'" id="formu">Formula Used<br>
+                        F&nbsp;=&nbsp;(&nbsp;C&nbsp;*&nbsp;(&nbsp;9&nbsp;/&nbsp;5&nbsp;)&nbsp;)&nbsp;+&nbsp;32
+                    </font>
+                </center>
+            </p>
+        </div>
+    </div>
+
+    <div class="information">
+        <p id="info">
+        <ul>
+            <li> The Celsius temperature range was originally defined by setting zero as the temperature at which water
+                froze.
+                Zero degrees C was later redefined as the temperature at which ice melts. The other point at which
+                Celsius
+                was
+                set – 100 degrees Celsius – was defined as the boiling point of water.<br><br>
+            </li>
+
+            <li>
+                Since its definition, the Celsius scale has been redefined to peg it to Kelvin. Zero degrees Celsius is
+                now
+                defined as 273.15K. As one degree Celsius is equal to one Kelvin, boiling point of water is equal to
+                273.15
+                +
+                100 = 373.15 Kelvin.<br><br>
+            </li>
+
+            <li>
+                The Fahrenheit temperature range is based on setting the freezing point of water at 32 degrees, and
+                boiling
+                to
+                212 degrees. This means that boiling and freezing point are 180 degrees apart. Absolute zero is defined
+                as
+                -459.67°F.
+            </li>
+        </ul>
+
+        </p>
+    </div>
+    <section id="temperature">
+        <div id="display">
+            <font>CURRENT AREA TEMPERATURE</font>
+        </div><br>
+        <div class="weather-container">
+            <div class="weather-box">
+                <h2 id="temperature"></h2>
+                <p id="condition"></p>
+                <p id="location"></p>
+            </div>
+            <br />
+            <input type="text" placeholder="Enter a location" id="search-bar">
+            <br />
+            <button id="search-btn">Search</button>
+        </div>
+
+    </section>
+    <section id="abt">
+        <div id="abthead">
+            ABOUT US
+        </div>
+        <div id="infabt">
+
+
+            Welcome to our temperature conversion and local area temperature website! We are a dedicated team of
+            enthusiasts who embarked on this journey to make temperature conversion a breeze and provide you with
+            real-time area temperature updates. Our journey began on August 6th when we set out to create a
+            user-friendly platform that effortlessly converts Celsius to Fahrenheit while keeping you informed about the
+            current temperature in your region.<br>
+
+            <h2>Our Mission:</h2>
+
+            At our core, we are committed to simplifying temperature conversions and keeping you connected to your
+            local
+            climate. Our mission is to provide a seamless experience for our users, allowing them to effortlessly
+            switch
+            between Celsius and Fahrenheit measurements with just a few clicks. Additionally, we understand the
+            importance of staying informed about the weather around you. Hence, we strive to offer up-to-date and
+            accurate area temperature information, ensuring that you're equipped with the knowledge you need to plan
+            your day effectively.<br>
+
+            With a passion for user-friendly design and accurate data, we are excited to have you join us on this
+            journey. Whether you're a student looking to complete your assignments, a traveler planning your
+            adventures,
+            or simply curious about the weather, our website is here to serve you. Thank you for choosing us as your
+            go-to temperature resource. We look forward to continually enhancing your experience and keeping you
+            informed about the temperatures that matter to you.
+            <h2>Our Vision:</h2>
+            As we move forward on our journey, our vision is to become the ultimate destination for all things related
+            to temperature conversion and area-specific weather information.<br> We aspire to be the first choice for
+            individuals seeking quick and accurate Celsius to Fahrenheit conversions and reliable updates on local
+            temperatures.
+        </div>
+    </section>
+    <section id="Support">
+        <div id="suppohead">
+            SUPPORT US
+        </div><br>
+        <center>
+            <div id="supp">
+                &nbsp; Do support to our website through comments and if you like share it.
+            </div>
+        </center> <br>
+        &nbsp;<center><textarea rows="10" cols="70">comment here</textarea><br>
+            <button>submit</button>
+        </center>
+    </section><br>
+    <section id="Contact Us">
+        <div id="cuhead">
+            CONTACT US
+        </div>
+        <br>
+        <div id="cuinfo">
+            <center>
+                <b>Founder:</b>&nbsp;P.Hari Rama Charan<br>
+                <b>Contact:</b>&nbsp;+91 6303389901<br>
+                <b>Address:</b>&nbsp;809A,California
+            </center>
+        </div><br>
+
+
+    </section>
+
+    <script src="temp.js"></script>
+    <script src="gaug.js"></script>
+</body>
+
+</html>
